@@ -1,0 +1,51 @@
+:root {
+    --restaurant-title: rgb(255, 255, 255); 
+    --header-shadow: rgba(100,100,100,.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('Pacifico-Regular.woff2') format('woff2'),
+        url('Pacifico-Regular.woff') format('woff');
+}
+
+#content {
+    border: 1px solid red;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./pizza.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-shadow) ;
+    width: inherit;
+    height: fit-content;
+}
+
+.restaurant-name {
+    font-family: MyWebFont;
+    font-size: 100px;
+    color: var(--restaurant-title);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    font-size: 20px;
+    list-style-type: none;
+    padding-bottom: 15px;
+    color:var(--restaurant-title)
+}
