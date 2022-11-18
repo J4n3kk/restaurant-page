@@ -16,12 +16,15 @@ function createHeader() {
     menu.classList.add('menu')
 
     const liHome = document.createElement('li'); 
+    liHome.classList.add('homeBtn')
     liHome.textContent = 'Home'
 
     const liMenu = document.createElement('li') ;
+    liMenu.classList.add('menuBtn')
     liMenu.textContent = 'Menu'
 
     const liContact = document.createElement('li'); 
+    liContact.classList.add('contactBtn')
     liContact.textContent = 'Contact'
 
     header.appendChild(restaurantName)
@@ -33,4 +36,17 @@ function createHeader() {
 }
 
 
-createHeader()
+export default createHeader
+
+
+/* const liHome = document.createElement('li');
+liHome.classList.add('homeBtn')
+liHome.textContent = 'Home'
+
+const liMenu = document.createElement('li');
+liMenu.classList.add('menuBtn')
+liMenu.textContent = 'Menu'
+
+const liContact = document.createElement('li');
+liContact.classList.add('contactBtn')
+liContact.textContent = 'Contact' */
